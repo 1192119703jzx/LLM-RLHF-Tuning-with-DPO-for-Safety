@@ -62,10 +62,10 @@ with open("dataset/paired_dataset_test_moderation_TT.json", "w") as f:
         output = {
             "prompt": pair["prompt"],
             "category": reject_moderation_category,
-            "Without_DPO_moderation_score": reject_moderation_score,
-            "With_DPO_moderation_score": chosen_moderation_score,
-            "Without_DPO_mean_score": reject_mean,
-            "With_DPO_mean_score": chosen_mean,
+            "Rejected_moderation_score": reject_moderation_score,
+            "Chosen_moderation_score": chosen_moderation_score,
+            "Rejected_mean_score": reject_mean,
+            "Chosen_mean_score": chosen_mean,
             "Improve": (is_highest, is_mean)
         }
         total += 1
